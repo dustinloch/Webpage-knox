@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+<script type="text/javascript">var _sf_startpt = (new Date()).getTime()</script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Requirments &amp; Course Descriptions for Mathematics" />
+<title>Course Schedule Finder</title>
+    <base href="http://www.knox.edu:80/" />
+
+    
+<link href="//cloud.typography.com/7770092/666464/css/fonts.css" rel="stylesheet" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+    <link href="/Content/css/styles?v=oJAlIRkuWitIEQ41tlUkL5R4sPj-vav4B7Iz29qvdBE1" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+    
+</head>
+<body vlink="white">
+
+<header class="">
+    <div id="SearchBtn"><span><i class="fa fa-search"></i><span>Search</span></span></div>
+    <div id="Logo"><a href="">Knox College</a></div>
+    <div id="MenuBtn"><span><i class="fa fa-bars"></i><span>Menu</span></span></div>
+</header>
+<nav class="main">
+    <div class="close">
+        <button>Close</button>
+    </div>
+    <div class="mainLinks">
+        <ul>
+                <li><a href="academics"><img src="images/Assets/Nav-Icons/academics.svg" alt="Academics" />Academics</a></li>
+                <li><a href="admission"><img src="images/Assets/Nav-Icons/admission.svg" alt="Admission" />Admission</a></li>
+                <li><a href="campus-life"><img src="images/Assets/Nav-Icons/campuslife.svg" alt="Campus Life" />Campus Life</a></li>
+                <li><a href="after-knox"><img src="images/Assets/Nav-Icons/afterknox.svg" alt="After Knox" />After Knox</a></li>
+                <li><a href="support-knox"><img src="images/Assets/Nav-Icons/support.svg" alt="Support Knox" />Support Knox</a></li>
+                <li><a href="http://prairiefire.knox.edu"><img src="images/Assets/Nav-Icons/athletics.svg" alt="Athletics" />Athletics</a></li>
+                <li><a href="/calendar"><img src="images/Assets/Nav-Icons/calendar.svg" alt="Upcoming Events" />Upcoming Events</a></li>
+                <li><a href="news"><img src="images/Assets/Nav-Icons/news.svg" alt="News" />News</a></li>
+        </ul>
+        <hr />
+        <ul>
+                <li><a href="alumni"><img src="images/Assets/Nav-Icons/alumni.svg" alt="Alumni" />Alumni</a></li>
+                <li><a href="parents"><img src="images/Assets/Nav-Icons/parents.svg" alt="Parents" />Parents</a></li>
+                <li><a href="new-students"><img src="images/Assets/Nav-Icons/newstudents.svg" alt="New Students" />New Students</a></li>
+                <li><a href="http://my.knox.edu"><img src="images/Assets/Nav-Icons/myknox.svg" alt="My.Knox" />My.Knox</a></li>
+        </ul>
+    </div>
+    <div class="socialLinks">
+        <p>Connect with Knox</p>
+        <p><a href="https://www.facebook.com/KnoxCollege" onclick="ga('send', 'event', 'Social - Menu', 'Facebook');"><i class="fa fa-facebook"></i></a><a href="http://twitter.com/knoxcollege1837" onclick="    ga('send', 'event', 'Social - Menu', 'Twitter');"><i class="fa fa-twitter"></i></a><a href="http://instagram.com/knoxcollege1837" onclick="ga('send', 'event', 'Social - Menu', 'Instagram');"><i class="fa fa-instagram"></i></a></p>
+    </div>
+</nav>
+<div class="search">
+    <div class="searchTop">
+        <img src="/Content/images/search-notch.png" alt="" />
+    </div>
+    <div class="searchBody">
+        <img class="searchPurpleNotch" src="/Content/images/purple-notch.png" alt="" />
+        <div class="searchBox">
+            <input data-bind="value: searchTerms, valueUpdate: 'afterkeydown'" />
+            <a href="#" data-bind="click: SearchSite"><i class="fa fa-search"></i></a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+<div class="sectionHero">
+    <img style="-webkit-user-select: none;" src="http://i.imgur.com/yAE10j6.jpg" width="1197" height="510">
+
+    <img id="HeroFade" src="/Content/images/hero-fade.png" alt="#" />
+        <div>
+              <style>
+			  .h1{
+				  
+				      text-shadow: 2px 2px 1px #FF0000;
+				  
+			  }
+			  </style>
+                <h1>
+                    <font color = "gold">Course Schedule</font>
+                </h1>
+        </div>
+</div>
+
+<div class="dropDownNav programs">
+    
+    <div>
+        <img src="/Content/images/black-notch.png" alt="#" />
+        <nav>
+
+        </nav>
+ 
+ 
+    </div>
+</div>
+
+<div class="sectionBody group CourseInfoPage">
+    <style>
+		.secCol1 {
+			color: white;
+		}
+	</style>
+	
+<div class="secCol1">
+		<style> 
+		
+		.found {
+			display: block;
+			    float: left;
+			    width: 100%;
+				
+		}
+		.days {
+			display: block;
+			    float: left;
+			    width: 100%;
+		}
+		</style>
+    <div class="tertiaryNav">
+		
+       <p> <h3>Filters</h3></p>
+	   <br>
+	   Department: 
+	   <select>
+	     <option value=""></option>
+	     <option value="cs">CS</option>
+	     <option value="bio">BIO</option>
+	     <option value="chem">CHEM</option>
+	     <option value="phys">PHYS</option>
+	   </select>
+	   <br>&nbsp;<br>
+   	 <p>Foundations:
+	 <br>
+	 <div class = "found">
+   		 <input type="checkbox" name="Found" value="DV">DV
+   		 <input type="checkbox" name="Found" value="HSS">HSS
+		 <br>
+   		 <input type="checkbox" name="Found" value="W">W
+   		 <input type="checkbox" name="Found" value="HUM">HUM
+		 <br>
+   		 <input type="checkbox" name="Found" value="ARTS">ARTS
+   		 <input type="checkbox" name="Found" value="MNS">MNS
+     </div>
+ 	<br>&nbsp;<br>
+	<br>
+
+	 <div class = "days">
+   		 
+		 Days:
+		 <br>
+   		 <input type="checkbox" name="day" value="m">M
+   		 <input type="checkbox" name="day" value="t">Tu
+   		 <input type="checkbox" name="day" value="w">W
+   		 <input type="checkbox" name="day" value="th">Th
+   		 <input type="checkbox" name="day" value="f">F
+
+     </div>
+	 <br>&nbsp;<br>
+ 	<br>
+   	 Period:
+     <br>
+	 
+   	 <input type="checkbox" name="perd" value="1">1
+   	 <input type="checkbox" name="perd" value="2">2
+   	 <input type="checkbox" name="perd" value="2s">2s
+   	 <input type="checkbox" name="perd" value="3">3
+   	 <input type="checkbox" name="perd" value="3s">3s
+   	 <input type="checkbox" name="perd" value="4">4
+   	 <input type="checkbox" name="perd" value="5">5
+   	 <input type="checkbox" name="perd" value="5s">5s
+   	 <input type="checkbox" name="perd" value="6">6
+ </p>
+   	 <br>
+	 
+   	 <input type="submit" value="Filter">
+		
+		
+    </div>
+	<div class="contactInfo">
+	            
+		        <ul>
+		                <li>
+		                    <a class="current" href="academics/majors-and-minors">Majors &amp; Minors</a>
+		                        <ul>
+		                        </ul>
+		                </li>
+						<br>
+		                <li>
+		                    <a class="" href="offices/registrar">Registrar</a>
+		                </li>
+						<br>
+		                <li>
+		                    <a class="" href="academics/academic-calendar">Academic Calander</a>
+		                </li>
+                
+		        </ul>
+	            
+	                    
+	            </div>
+    
+    
+        <div class="mainBackgroundImage">
+    <img src="images/SectionBackgrounds2/Chemistry_class_131022_0223-2.jpg" alt="A mortar and pestle sit on a lab desk. " />
+        </div>
+</div>
+
+
+    <div class="secCol2">
+        
+<div class="topBody" style = "background-color: #84709F">
+  
+  <style>
+  table {
+      width:70%;
+  }
+  table, th, td {
+      border: 0px;
+      border-collapse: collapse;
+  }
+  th, td {
+      text-align: left;
+  }
+  t {
+  	
+  }
+  table#t01 tr:nth-child(even) {
+      background-color: #E1C44F;
+  }
+  table#t01 tr:nth-child(odd) {
+     background-color:#d4aa03;
+  }
+  table#t01 th	{
+	  font-size: 13px;
+      background-color: #4f3276;
+      color: white;
+  }
+  table#t01 td{
+	  font-size: 12px;
+  }
+  </style>
+  <table id="t01">
+    <tr>
+      <th>Course Number</th>
+      <th>Course Name</th>		
+      <th>Credits</th>
+	  <th>W</th>
+	  <th>Foundations</th>
+	  <th>Faculty</th>
+	  <th>Period</th>
+	  <th>Days</th>
+    </tr>
+    <tr>
+		<td>CS 320</td>
+		<td>Databases</td>
+		<td>1.0</td>
+		<td>---</td>
+		<td>QRS</td>
+		<td>J. Spacco</td>
+		<td>5</td>
+		<td>M W F</td>
+    </tr>
+    <tr>
+		<td>CS 205</td>
+		<td>Algorithms</td>
+		<td>1.0</td>
+		<td>---</td>
+		<td>QRS</td>
+		<td>D. Bunde</td>
+		<td>6</td>
+		<td>M T W F</td>
+    </tr>
+    
+    
+  </table>
+
+
+  
+  
+  
+  
+  
+</div>
+
+<div class="ctas">
+        <img src="http://aphs.worldnomads.com/ceconover/50977/HotAirBallonAdventure.jpg" alt="Hot air balloons by Clara Conover, used with permission" />
+    
+    
+<div class="CTABar">
+    
+    <a href="academics/majors-and-minors" onclick="ga('send','event','Majors &amp; Minors','Apply for Admission',{'page': '/academics/majors-and-minors/mathematics/courses'});"><img src="images/Assets/CTAs/apply-for-admission.svg" alt="Apply for Admission" /></a>
+    <a href="https://apply.knox.edu/register/requestinfo" onclick="ga('send','event','Majors &amp; Minors','Request More Info',{'page': '/academics/majors-and-minors/mathematics/courses'});"><img src="images/Assets/CTAs/request-more-info.svg" alt="Request More Info" /></a>
+    <a href="admission/visit-knox" onclick="ga('send','event','Majors &amp; Minors','Visit Knox',{'page': '/academics/majors-and-minors/mathematics/courses'});"><img src="images/Assets/CTAs/visit-knox.svg" alt="Visit Knox" /></a>
+</div>
+
+</div>
+    </div>
+</div>
+
+
+    <footer>
+    <div class="footerLogo">
+        <a href=""><img src="/Content/svgs/knox-logo-white.svg" alt="Knox College" /></a>
+        <p>Follow Knox <a href="https://www.facebook.com/KnoxCollege" onclick="ga('send', 'event', 'Social - Footer', 'Facebook');"><i class="fa fa-facebook"></i></a><a href="http://twitter.com/knoxcollege1837" onclick="    ga('send', 'event', 'Social - Footer', 'Twitter');"><i class="fa fa-twitter"></i></a><a href="http://instagram.com/knoxcollege1837" onclick="ga('send', 'event', 'Social - Footer', 'Instagram');"><i class="fa fa-instagram"></i></a></p>
+    </div>
+    <div class="footerLinks">
+        <ul>
+            <li><a href="https://www.google.com/maps/place/Knox+College" target="_blank">2 East South Street<br />Galesburg, Illinois<br />61401-4999, USA</a></li>
+            <li><a href="tel:13093417000">309-341-7000</a></li>
+                    <li class="heading"><a href="campus-life/explore-campus">Campus Map</a></li>
+                    <li class="heading"><a href="about-knox/visit-knox">Visit Knox</a></li>
+        </ul>
+        <ul>
+                    <li class="heading"><a href="about-knox">About Knox</a></li>
+                    <li class=""><a href="about-knox/fast-facts">Fast Facts</a></li>
+                    <li class=""><a href="about-knox/our-mission">Our Mission</a></li>
+                    <li class=""><a href="about-knox/our-values">Our Values</a></li>
+                    <li class=""><a href="about-knox/our-leadership">Our Leadership</a></li>
+                    <li class=""><a href="about-knox/our-history">Our History</a></li>
+        </ul>
+        <ul>
+                    <li class="heading"><a href="employment-at-knox">Employment at Knox</a></li>
+                    <li class="heading"><a href="http://www.knox.edu/directory">Campus Directory</a></li>
+                    <li class="heading"><a href="emergency-info">Emergency</a></li>
+                    <li class="heading"><a href="/calendar">Events Calendar</a></li>
+                    <li class="heading"><a href="news">News</a></li>
+        </ul>
+        <ul>
+                    <li class="heading"><a href="library">Library</a></li>
+                    <li class="heading"><a href="for-the-media">For the Media</a></li>
+                    <li class="heading"><a href="http://knoxshop.knox.edu">The Knox Shop</a></li>
+                    <li class="heading"><a href="a-z-index">A-Z Index</a></li>
+        </ul>
+    </div>
+</footer>
+<div id="Overlay" data-bind="click: CloseModals"><!-- --></div>
+<script type="text/javascript">
+    var _sf_async_config = { uid: 56449, domain: 'knox.edu', useCanonical: true };
+    (function () {
+        function loadChartbeat() {
+            window._sf_endpt = (new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+        };
+        var oldonload = window.onload;
+        window.onload = (typeof window.onload != 'function') ?
+            loadChartbeat : function () { oldonload(); loadChartbeat(); };
+    })();
+</script>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-1764469-1', 'auto');
+    ga('send', 'pageview');
+</script>
+    <div id="PrintFooter">
+        <img src="/Content/images/printLogo.jpg" alt="Knox College" width="257" height="67" />
+        <p>http://www.knox.edu/academics/majors-and-minors/mathematics/courses</p>
+        <p>Printed on Monday, January 26, 2015</p>
+    </div>
+    <section id="BackToHello"><p><a href="https://hello.knox.edu"><i class="fa fa-arrow-left"></i>Back to <span>Hello.knox.edu</span></a></p></section>
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+
+    <script src="//ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js"></script>
+
+    <script src="/Scripts/sammy-latest.min.js"></script>
+    <script src="/bundles/jscripts?v=KcgoJFE9Iba70VlZtHU2t4h-NyDJyvU-VI3i6cjjo3s1"></script>
+
+    
+    
+
+    
+</body>
+</html>
